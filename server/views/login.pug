@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title login
+    meta(name='viewport' charset="UTF-8")
+    script(type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js")
+    script
+      include ./../routes/login/localLogin.js
+      include ./../routes/login/tokenAPI.js
+  body
+    section(class="signup")
+      h3 Signup
+      form(action="/member/signup" method="post")
+        div(class="input")
+          label(for="signupid") ID
+          input(type="text" id="signupid" name="signupid")
+        div(class="input")
+          label(for="signuppassword") Password
+          input(type="text" id="signuppassword" name="signuppassword")
+        div(class="input")
+          label(for="username") UserName
+          input(type="text" id="username" name="username")
+        div(class="input")
+          label(for="email") E-Mail
+          input(type="text" id="email" name="email")
+        div
+          button(type="button", onclick="localSignup()") Signup 
+       
+    section(class="login")
+      h3 Login
+      form(action="/member/login" method="post")
+        div(class="input")
+          label(for="loginid") ID
+          input(type="text" id="loginid" name="loginid")
+        div(class="input")
+          label(for="loginpassword") Password
+          input(type="text" id="loginpassword" name="loginpassword")
+        div
+          button(type="button", onclick="localLogin()") login    
+
+    section(class="delete")
+      h3 Delete Data
+      form(action="/member/delete" method="post")
+        div(class="input")
+          label(for="id") ID
+          input(type="text" id="id" name="id")
+        div(class="input")
+          label(for="password") Password
+          input(type="text" id="password" name="password")
+        button(type="submit") DELETE
+        
+    section(class="logout")
+        button(onclick="logout()") LOGOUT
+    
+    section(class="getId")
+      button(onclick="getId()") getId

@@ -1,0 +1,15 @@
+html
+  head
+    title post
+    meta(name='viewport' charset="UTF-8")
+    script(type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js")
+    script
+      include ./../routes/login/tokenAPI.js 
+    
+  body
+
+    section
+      form(action="/boards/follow" method="post")
+        div
+          button(type="submit") 글쓰기
+    
