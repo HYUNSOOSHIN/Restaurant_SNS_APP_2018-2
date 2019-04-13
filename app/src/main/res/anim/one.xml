@@ -1,0 +1,17 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:shareInterpolator="true"
+    android:fillAfter="true">
+    <alpha
+        android:startOffset="0"  android:duration="500"
+        android:src="@drawable/logom"
+        android:fromAlpha="0"
+        android:toAlpha="1"
+       />
+d    <alpha
+        android:startOffset="2000"  android:duration="500"
+        android:src="@drawable/logom"
+        android:fromAlpha="1"
+        android:toAlpha="0"
+        />
+</set>

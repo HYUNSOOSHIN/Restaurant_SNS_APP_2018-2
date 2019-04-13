@@ -1,0 +1,9 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">192.168.200.122</string>
+    <!--aws ec2 서버-->
+    <string name="ip_address">http://13.231.41.73:3000</string>
+
+    <!--<string name="ip_address">http://192.168.200.122:3000</string>-->
+
+</resources>

@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.hyunsoo.android_programming_2017_2.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="맛집 등록"
+        android:textSize="30dp" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="5dp"
+        android:background="#999999"/>
+
+    <ImageView
+        android:id="@+id/mimage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/temp_image" />
+
+    <EditText
+        android:id="@+id/edit_mname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mimage"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/style_btn"
+        android:textSize="25dp"
+        android:hint="맛집 이름"/>
+
+    <EditText
+        android:id="@+id/edit_maddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_mname"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/style_btn"
+        android:textSize="25dp"
+        android:hint="맛집 주소"/>
+
+    <EditText
+        android:id="@+id/edit_mtelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_maddress"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/style_btn"
+        android:textSize="25dp"
+        android:hint="맛집 전화번호"/>
+
+    <EditText
+        android:id="@+id/edit_mbusiness_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_mtelephone"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/style_btn"
+        android:textSize="25dp"
+        android:hint="영업 시간"/>
+
+    <Button
+        android:id="@+id/image_addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear"
+        android:text="사진 추가"
+        android:background="@drawable/style_btn" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/style_btn"
+        android:text="등록" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/style_btn"
+        android:text="취소" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.example.hyunsoo.android_programming_2017_2"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.android.gms:play-services-location:11.0.4' //위치
+    implementation 'com.google.android.gms:play-services-maps:11.0.4' //지도
+    implementation 'com.roughike:bottom-bar:2.3.1' //하단 네비게이션
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:26.1.0' //탭메뉴바, 뷰페이저
+
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.firebase:firebase-client-android:2.4.1+'
+
+    //[출처] Amazon Web Service, S3 저장소에 이미지 업로드 하기 (1) - Set Up the SDK for Android|작성자 ExamMode
+    implementation 'com.amazonaws:aws-android-sdk-core:2.2.+'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.2.+'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.2.+'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

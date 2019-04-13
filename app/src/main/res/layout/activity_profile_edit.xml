@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/temp_image"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/image_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진 변경"
+            android:background="@drawable/style_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"/>
+        <EditText
+            android:id="@+id/_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일"/>
+        <EditText
+            android:id="@+id/_useremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/changebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="개인정보 수정"
+                android:background="@drawable/style_btn"/>
+            <Button
+                android:id="@+id/passwordbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="비밀번호 변경"
+                android:background="@drawable/style_btn"/>
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="로그아웃"
+                android:background="@drawable/style_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

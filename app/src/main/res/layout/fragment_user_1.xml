@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hyunsoo.android_programming_2017_2.My_1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="내 게시물 그리드뷰"-->
+    <!--android:textSize="30dp"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <GridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/user1_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </ScrollView>
+
+</FrameLayout>
